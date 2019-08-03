@@ -1,0 +1,143 @@
+<!-- COVER PAGE CONTENT -->
+
+<div class="row expanded">
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+                <img class="splash-image" src="assets/img/dsi-cover.png" alt="Space"/>
+                <div class="orbit-caption flex-container align-center-middle" style="height: 100%; background-color: transparent;">
+                    <h1 class="secondary-color section-heading capitalize">Dynamic Solution Innovators</h1>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- FIND US HEADING -->
+
+<div class="row expanded">
+    <div class="small-12 medium-12 large-12 columns margin-top-2 margin-bottom-2">
+        <h1 class="text-center separator-center section-heading capitalize heading-color">Find Us</h1>
+    </div>
+</div>
+
+<!-- FIND US CONTENT -->
+
+<div class="row margin-bottom-2 padding-left-10 padding-right-10">
+    <div class="small-12 medium-6 large-6 columns">
+        <div class="card" style="border: 1px solid #e6e6e6">
+            <div class="card-divider text-center">
+                <h4 class="primary-color">Dhaka Office</h4>
+            </div>
+            <div class="card-section text-center">
+                <address style="font-style: normal;">Dynamic Solution Innovators Ltd.<br>
+                    House 185, Lane 2, New DOHS<br>
+                    Mohakhali, Dhaka 1206, Bangladesh.
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="small-12 medium-6 large-6 columns">
+        <div class="card" style="border: 1px solid #e6e6e6">
+            <div class="card-divider text-center">
+                <h4 class="primary-color">USA Office</h4>
+            </div>
+            <div class="card-section text-center">
+                <address style="font-style: normal;">Dynamic Solution Innovators, Inc.<br>
+                    8201 164th Ave NE, Suite 200<br>
+                    Redmond, WA 98052
+                </address>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row expanded secondary-background">
+    <div class="row padding-left-10 padding-right-10">
+
+        <!-- MAP CONTENT-->
+
+        <div class="small-12 medium-6 large-6 columns margin-top-3 margin-bottom-2">
+            <div id="map" style="min-height: 580px;"></div>
+        </div>
+
+        <!-- WRITE TO US HEADING AND CONTENT -->
+
+        <div class="small-12 medium-6 large-6 columns margin-bottom-2">
+            <div class="row">
+                <div class="small-12 medium-12 large-12 columns margin-top-2 margin-bottom-2">
+                    <h1 class="text-center separator-center section-heading capitalize heading-color">Write
+                        Something?</h1>
+                </div>
+
+                <div class="row">
+                    <form>
+                        <div class="row">
+                            <div class="small-12 medium-12 large-12 columns">
+                                <input class="font-italic" type="text" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="small-6 medium-12 large-6 columns">
+                                <div>
+                                    <input class="font-italic" type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="small-6 medium-12 large-6 columns">
+                                <div>
+                                    <input class="font-italic" type="number" placeholder="Phone No.">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="small-12 medium-12 large-12 columns">
+                                <textarea class="font-italic" placeholder="Message" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="text-center">
+                    <a class="button medium margin-top-1 margin-bottom-2 capitalize"><strong>Submit</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // Pop up to show company name
+        var infowindow = new google.maps.InfoWindow({
+            content: "<span>Dynamic Solution Innovators</span>"
+        });
+
+        // The location of DSi
+        var dsi = {
+            lat: 23.784671,
+            lng: 90.398064
+        };
+
+        // The map, centered at DSi
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: dsi
+        });
+
+        // The marker, positioned at DSi
+        var marker = new google.maps.Marker({
+            position: dsi,
+            map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa21nN-ua5oUcdwIytbOxfo48U-YQMgUE&callback=initMap"></script>

@@ -1,0 +1,276 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Dynamic Solution Innovators</title>
+
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <link rel="icon" href="assets/img/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png"/>
+</head>
+<body>
+
+
+
+<!-- TOP BAR -->
+
+<div class="row large-centered">
+    <div class="title-bar show-caption-for-small" data-responsive-toggle="example-animated-menu">
+        <div class="title-bar-left">
+            <div class="title-bar-title">
+                <a href="index.html"><img class="dsi-logo" src="assets/img/dsi.png"/></a>
+            </div>
+        </div>
+        <div class="title-bar-right">
+            <button class="menu-icon dark" type="button" data-toggle=""></button>
+        </div>
+    </div>
+    <div class="top-bar hide-caption-for-small" id="example-animated-menu">
+        <div class="top-bar-left">
+            <a href="index.html"><img class="dsi-logo" src="assets/img/dsi.png"/></a>
+        </div>
+
+        <div class="top-bar-right" id="right-menu">
+            <ul class="menu vertical medium-horizontal" data-magellan>
+                <li><a class="top-bar-menu-item capitalize" href="index.html#first">Projects</a></li>
+                <li><a class="top-bar-menu-item capitalize" href="index.html#second">Clients</a></li>
+                <li><a class="top-bar-menu-item capitalize" href="index.html#third">Our People</a></li>
+                <li><a class="partner-with-us capitalize" href="team.html#join-us">Join Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- COVER PAGE CONTENT -->
+
+<div class="row expanded">
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+                <img class="splash-image" src="assets/img/dsi-cover.png" alt="Space"/>
+                <div class="orbit-caption flex-container align-center-middle" style="height: 100%; background-color: transparent;">
+                    <h1 class="secondary-color section-heading capitalize">Dynamic Solution Innovators</h1>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- FIND US HEADING -->
+
+<div class="row expanded">
+    <div class="small-12 medium-12 large-12 columns margin-top-2 margin-bottom-2">
+        <h1 class="text-center separator-center section-heading capitalize heading-color">Find Us</h1>
+    </div>
+</div>
+
+<!-- FIND US CONTENT -->
+
+<div class="row margin-bottom-2 padding-left-10 padding-right-10">
+    <div class="small-12 medium-6 large-6 columns">
+        <div class="card" style="border: 1px solid #e6e6e6">
+            <div class="card-divider text-center">
+                <h4 class="primary-color">Dhaka Office</h4>
+            </div>
+            <div class="card-section text-center">
+                <address style="font-style: normal;">Dynamic Solution Innovators Ltd.<br>
+                    House 185, Lane 2, New DOHS<br>
+                    Mohakhali, Dhaka 1206, Bangladesh.
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="small-12 medium-6 large-6 columns">
+        <div class="card" style="border: 1px solid #e6e6e6">
+            <div class="card-divider text-center">
+                <h4 class="primary-color">USA Office</h4>
+            </div>
+            <div class="card-section text-center">
+                <address style="font-style: normal;">Dynamic Solution Innovators, Inc.<br>
+                    8201 164th Ave NE, Suite 200<br>
+                    Redmond, WA 98052
+                </address>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row expanded secondary-background">
+    <div class="row padding-left-10 padding-right-10">
+
+        <!-- MAP CONTENT-->
+
+        <div class="small-12 medium-6 large-6 columns margin-top-3 margin-bottom-2">
+            <div id="map" style="min-height: 580px;"></div>
+        </div>
+
+        <!-- WRITE TO US HEADING AND CONTENT -->
+
+        <div class="small-12 medium-6 large-6 columns margin-bottom-2">
+            <div class="row">
+                <div class="small-12 medium-12 large-12 columns margin-top-2 margin-bottom-2">
+                    <h1 class="text-center separator-center section-heading capitalize heading-color">Write
+                        Something?</h1>
+                </div>
+
+                <div class="row">
+                    <form>
+                        <div class="row">
+                            <div class="small-12 medium-12 large-12 columns">
+                                <input class="font-italic" id="txtName" type="text" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="small-6 medium-12 large-6 columns">
+                                <div>
+                                    <input class="font-italic" id="txtEmail" type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="small-6 medium-12 large-6 columns">
+                                <div>
+                                    <input class="font-italic" id="txtNumber" type="number" placeholder="Phone No.">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="small-12 medium-12 large-12 columns">
+                                <textarea class="font-italic" id="txtMessage" placeholder="Message" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="text-center">
+                    <a href="index.html" class="button medium margin-top-1 margin-bottom-2 capitalize" id="btnSubmit"><strong>Submit</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // Pop up to show company name
+        var infowindow = new google.maps.InfoWindow({
+            content: "<span>Dynamic Solution Innovators</span>"
+        });
+
+        // The location of DSi
+        var dsi = {
+            lat: 23.784671,
+            lng: 90.398064
+        };
+
+        // The map, centered at DSi
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: dsi
+        });
+
+        // The marker, positioned at DSi
+        var marker = new google.maps.Marker({
+            position: dsi,
+            map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa21nN-ua5oUcdwIytbOxfo48U-YQMgUE&callback=initMap"></script>
+
+
+<!-- CONTACT US CONTENT -->
+
+<div id="contact-us" class="row expanded">
+    <div class="row padding-left-10 margin-top-1 margin-bottom-1">
+        <div class="small-12 medium-4 large-4 columns contact-us-container">
+            <p class="contact-us-content"><strong>Dynamic Solution Innovators Ltd.</strong></p>
+            <address class="contact-us-content" style="font-style: normal">
+                House 185, Lane 2, New DOHS<br>
+                Mohakhali, Dhaka 1206, Bangladesh
+            </address>
+        </div>
+        <div class="small-12 medium-4 large-4 columns contact-us-container">
+            <p class="contact-us-content"><strong>Contact Us:</strong></p>
+            <p class="contact-us-content">
+                Dhaka Office: +88017300-374-00<br>
+                Telephone: +88-02-9887041<br>
+                USA Office: 404-287-0730<br>
+                Email: <img src="assets/img/dsi-email.png">
+            </p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns contact-us-container">
+            <p class="contact-us-content">
+                <strong>Find Us: </strong>
+                <a href="https://www.facebook.com/DynamicSolutionInnovators/"
+                   class="show-for-small-only" style="margin-left: 0.5rem;">
+                    <img src="assets/img/facebook.png" style="height: 25px; width: 25px;">
+                </a>
+                <a href="https://www.linkedin.com/company/the-dynamic-solution-innovators/"
+                   class="show-for-small-only" style="margin-left: 0.5rem;">
+                    <img src="assets/img/linkedin.png" style="height: 25px; width: 25px;">
+                </a>
+            </p>
+            <div class="row hide-for-small-only">
+                <div class="float-left">
+                    <a href="https://www.facebook.com/DynamicSolutionInnovators/">
+                        <img src="assets/img/facebook.png" style="height: 25px; width: 25px;">
+                    </a>
+                </div>
+                <div class="float-left" style="margin-left: 0.5rem;">
+                    <a href="https://www.linkedin.com/company/the-dynamic-solution-innovators/">
+                        <img src="assets/img/linkedin.png" style="height: 25px; width: 25px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- COPYRIGHT CONTENT -->
+
+<div id="copyright" class="row expanded">
+    <div class="row">
+        <p class="copyright-content text-center">
+            © 2018 Dynamic Solution Innovators Ltd.
+        </p>
+    </div>
+</div>
+
+<!-- RETURN TO TOP -->
+
+<a href="javascript:void(0)" id="return-to-top">
+    <img src="assets/img/back-to-top.png">
+</a>
+
+<script src="assets/js/app.js"></script>
+
+<script>
+    // ===== Scroll to Top ====
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 100) {       // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function () {     // When arrow is clicked
+        $('body,html').animate({
+            scrollTop: 0                        // Scroll to top of body
+        }, 500);
+    });
+</script>
+</body>
+</html>

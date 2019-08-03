@@ -1,0 +1,462 @@
+@media screen and (max-width: 39.9375em) {
+    .top-bar .top-bar-left {
+        display: none;
+    }
+}
+
+.splash-caption-container {
+    @extend .orbit-caption;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 48em) {
+    .splash-caption-container > div > div {
+        text-align: center;
+    }
+
+    .splash-caption-container > div > p, .splash-caption-container > div > p {
+        text-align: center;
+    }
+}
+
+#join-us {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 30em) {
+    .splash-caption-container > div > div > a, #join-us > div > div > a {
+        font-size: 0.6rem;
+    }
+}
+
+.splash-caption {
+    background-color: rgba(41, 56, 128, 0.77);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.splash-caption-heading {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: inherit;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-rendering: optimizeLegibility;
+
+    @include breakpoint(large) {
+        font-size: 3rem;
+    }
+}
+
+.splash-caption-content {
+    @extend .splash-caption-heading;
+    font-size: 1rem;
+
+    @include breakpoint(large) {
+        font-size: 1.2rem;
+    }
+}
+
+.more-project-heading {
+    @extend .splash-caption-heading;
+    font-weight: bold;
+    font-size: 1.25rem;
+
+    @include breakpoint(medium) {
+        font-size: 2.5rem;
+    }
+}
+
+.meet-the-team-designation {
+    @extend .splash-caption-heading;
+    font-size: 1.0625rem;
+
+    @include breakpoint(medium) {
+        font-size: 1.25rem;
+    }
+}
+
+.show-for-extra-large {
+    display: none;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+}
+
+.hide-for-extra-large {
+    display: block;
+
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.row.contracted, .grid-container.contracted {
+    max-width: 654px;
+}
+
+.primary-background {
+    background: #293880;
+}
+
+.primary-color {
+    color: #293880;
+}
+
+.secondary-background {
+    background: #f1f1f1f1;
+}
+
+.secondary-color {
+    color: white;
+}
+
+.heading-color {
+    color: #4A4A4A;
+}
+
+.dsi-logo {
+    height: auto;
+    width: 70px;
+
+    @include breakpoint(medium down) {
+        width: 55px;
+    }
+
+    @include breakpoint(small down) {
+        width: 50px;
+    }
+}
+
+.section-heading {
+    font-weight: bold;
+}
+
+.splash-image {
+    @extend .orbit-image;
+    max-height: 900px;
+    object-fit: cover;
+}
+
+.contact-us-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include breakpoint(small down) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.contact-us-content {
+    color: white;
+
+    @include breakpoint(small down) {
+        text-align: center;
+    }
+}
+
+.copyright-content {
+    color: white;
+}
+
+.project-caption {
+    @extend .orbit-caption;
+    height: 44px;
+}
+
+.top-bar-menu-item, .partner-with-us {
+    font-size: 1.0833rem;
+    font-weight: bold;
+}
+
+.partner-with-us {
+    color: white;
+    background: #293880;
+
+    @include breakpoint(medium down) {
+        color: black;
+        background: white;
+    }
+}
+
+.partner-with-us:hover, .partner-with-us:focus {
+    background: white;
+}
+
+.project-workflow {
+    height: 60%;
+    width: 60%;
+
+    @include breakpoint(large down) {
+        height: 70%;
+        width: 70%;
+    }
+
+    @include breakpoint(medium down) {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.client-content-image {
+    height: 75px;
+    width: 75px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+}
+
+.client-testimonial-container {
+    @extend .orbit-figure;
+    display: flex;
+    min-height: 317px;
+
+    @include breakpoint(small down) {
+        min-height: 370px;
+    }
+
+    @include breakpoint(28.750em down) {
+        min-height: 390px;
+    }
+
+    @include breakpoint(20em down) {
+        min-height: 450px;
+    }
+}
+
+.client-testimonial-caption {
+    @extend .orbit-caption;
+    align-self: center;
+}
+
+.client-name {
+    margin-bottom: 0.5rem;
+    line-height: 0.7rem;
+    color: white;
+    font-size: 0.875rem;
+}
+
+.jenzabar-client-name {
+    @extend .client-name;
+
+    @include breakpoint(small down) {
+        line-height: 1rem;
+    }
+}
+
+.meet-the-team-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meet-the-team-name {
+    margin-bottom: 0.6rem;
+    line-height: 1;
+    font-size: 1.125rem;
+
+    @include breakpoint(medium down) {
+        font-size: 1rem;
+    }
+
+    @include breakpoint(small down) {
+        font-size: 0.875rem;
+    }
+}
+
+.employee-testimonial-container {
+    min-height: 550px;
+
+    @include breakpoint(small down) {
+        min-height: 700px;
+    }
+}
+
+.project-container {
+    min-height: 200px;
+}
+
+.employee-testimonial-content {
+    display: flex;
+
+    @include breakpoint(medium down) {
+        display: table;
+    }
+}
+
+.employee-testimonial-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    position: relative;
+    color: #050505;
+
+    @include breakpoint(medium down) {
+        font-size: 0.9375rem;
+    }
+}
+
+.employee-designation {
+    font-size: 0.875rem;
+    color: #050505;
+}
+
+.employee-name {
+    @extend .employee-designation;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.employee-social-link {
+    margin-left: 1rem;
+
+    @include breakpoint(small down) {
+        margin-left: 0.5rem;
+    }
+}
+
+.company-achievement-text-container {
+    height: 340px;
+    display: flex;
+
+    @include breakpoint(small down) {
+        height: 400px;
+    }
+}
+
+.technology-man-hour-count {
+    @extend .primary-color;
+    margin-bottom: 0.1rem;
+    line-height: 1;
+    font-size: 1.375rem;
+}
+
+.tech-slideshow {
+    height: 146px;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+    height: 146px;
+    width: 3240px;
+    background: url(../img/collage.png);
+    position: absolute;
+    transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow .mover {
+    animation: moveSlideshow 20s linear infinite;
+}
+
+@keyframes moveSlideshow {
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#partner-with-us-container {
+    background: #f1f1f1f1;
+}
+
+#partner-with-us-heading, #partner-with-us-content, #partner-with-us-button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#contact-us {
+    background: #686868;
+}
+
+#copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #4A4A4A;
+}
+
+.separator-center-white {
+    text-align: center !important;
+}
+
+.separator-center-white::before, .separator-center-white::after {
+    display: table;
+    content: ' ';
+}
+
+.separator-center-white::after {
+    clear: both;
+}
+
+.separator-center-white::after {
+    position: relative !important;
+    width: 4rem;
+    border-bottom: 0.125rem solid white;
+    margin: 1rem auto 0;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f1f1f1;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top img {
+    margin: 0;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    left: 16px;
+    top: 13px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: #f2f2f2;
+}
+
+#return-to-top:hover img {
+    top: 5px;
+}
+
+.content-highlight:hover, .content-highlight:focus {
+    border: 1px solid #293880;
+}
