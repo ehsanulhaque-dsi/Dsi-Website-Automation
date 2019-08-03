@@ -1,6 +1,6 @@
 describe('Verify the menu link and projects',() => {
     beforeEach(() => {
-        cy.visit('http://127.0.0.1:5500/website/dist/index.html');
+        cy.visit('http://127.0.0.1:5500/dist/index.html');
         
     })
     it('Verify DSI home page menu link', () => {

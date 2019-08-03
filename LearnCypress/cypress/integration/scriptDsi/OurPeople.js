@@ -1,6 +1,6 @@
 describe('Verify Dsi people',() => {
     beforeEach(() => {
-        cy.visit('http://127.0.0.1:5500/website/dist/index.html');
+        cy.visit('http://127.0.0.1:5500/dist/index.html');
         cy.get("#people").click();
         cy.get("#morePeople").click();
         

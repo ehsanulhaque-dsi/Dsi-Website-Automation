@@ -2,7 +2,7 @@ describe('Verify Dsi Contact',() => {
 
     it('Verify Dsi contact form ', () => {
         let message = "Hi! Dsi people. Very pleased to contact with you.";
-        cy.visit('http://127.0.0.1:5500/website/dist/index.html');
+        cy.visit('http://127.0.0.1:5500/dist/index.html');
         cy.get('#contactUs').scrollIntoView().click();
         cy.url().should('include', '/contact.html')
 
